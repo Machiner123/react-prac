@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   onBlogSubmit = (user, text) => {
-    const blogs = this.state.blogs
+    const { blogs } = this.state
     const blgArr = [...blogs, { user, text }]
     this.setState({ blogs: blgArr })
   }
