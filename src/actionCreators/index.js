@@ -4,4 +4,6 @@ const addBlogAC = (user, text) => ({
   text
 })
 
-export default addBlogAC
+module.exports = {
+  addBlogAC: addBlogAC
+}
